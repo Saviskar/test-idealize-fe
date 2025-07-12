@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import AnimatedBackground from "../components/AnimatedBackground";
-import Navbar from "../components/Navbar";
-import HeroSection from "../components/HeroSection";
-import HowItWorks from "../components/HowItWorks";
-import WhyMix from "../components/WhyMix";
-import ProductDemo from "../components/ProductDemo";
-import Testimonials from "../components/Testimonials";
-import FaqSection from "../components/FaqSection";
-import FinalCTA from "../components/FinalCTA";
+import AnimatedBackground from "../components/LandingPageComponents/AnimatedBackground";
+import Navbar from "../components/LandingPageComponents/Navbar";
+import HeroSection from "../components/LandingPageComponents/HeroSection";
+import HowItWorks from "../components/LandingPageComponents/HowItWorks";
+import WhyMix from "../components/LandingPageComponents/WhyMix";
+import ProductDemo from "../components/LandingPageComponents/ProductDemo";
+import Testimonials from "../components/LandingPageComponents/Testimonials";
+import FaqSection from "../components/LandingPageComponents/FaqSection";
+import FinalCTA from "../components/LandingPageComponents/FinalCTA";
 import Footer from "../components/layout/Footer";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0a0a23] to-[#1c1f3a] text-white overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white overflow-x-hidden">
       <AnimatedBackground />
       <Navbar
         scrollY={scrollY}
