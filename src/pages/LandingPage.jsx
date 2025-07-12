@@ -8,7 +8,7 @@ import ProductDemo from "../components/ProductDemo";
 import Testimonials from "../components/Testimonials";
 import FaqSection from "../components/FaqSection";
 import FinalCTA from "../components/FinalCTA";
-import Footer from "../components/Footer";
+import Footer from "../components/layout/Footer";
 
 function App() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-[#0a0a23] to-[#1c1f3a] text-white overflow-x-hidden">
       <AnimatedBackground />
       <Navbar
         scrollY={scrollY}
