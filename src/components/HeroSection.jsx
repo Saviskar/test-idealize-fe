@@ -6,11 +6,6 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto text-center relative z-10">
-        {/* <div className="mb-8">
-          <span className="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20 mb-8">
-            🚀 Now in Beta - Join the Future of Work
-          </span>
-        </div> */}
         <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight">
           <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
             Connect.
