@@ -6,9 +6,9 @@ import RegistrationPage from "./pages/RegistrationPage";
 function App() {
   return (
     <>
-      {/* <LandingPage /> */}
+      <LandingPage />
       {/* <LoginPage /> */}
-      <RegistrationPage />
+      {/* <RegistrationPage /> */}
     </>
   );
 }

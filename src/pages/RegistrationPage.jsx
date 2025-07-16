@@ -86,26 +86,31 @@ const RegistrationForm = () => {
 
         {/* Progress Bar */}
         <div className="relative">
-          <div className="flex justify-between items-center mb-8">
+          <div className="flex justify-between items-center mb-8 transition-all duration-500 ease-in-out">
             {[1, 2, 3].map((step) => (
-              <div key={step} className="flex items-center">
+              <div
+                key={step}
+                className="flex items-center transition-all duration-500 ease-in-out"
+              >
                 <div
-                  className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
+                  className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-500 ease-in-out transform ${
                     step <= currentStep
-                      ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
-                      : "bg-white/10 text-white/50"
+                      ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white scale-110"
+                      : "bg-white/10 text-white/50 scale-100"
                   }`}
                 >
                   {step}
                 </div>
                 {step < 3 && (
-                  <div
-                    className={`w-20 h-1 mx-4 rounded-full transition-all duration-300 ${
-                      step < currentStep
-                        ? "bg-gradient-to-r from-blue-500 to-purple-600"
-                        : "bg-white/10"
-                    }`}
-                  ></div>
+                  <div className="relative w-60 h-1 mx-4 bg-white/10 rounded-full overflow-hidden">
+                    <div
+                      className={`h-full rounded-full transition-all duration-700 ease-in-out ${
+                        step < currentStep
+                          ? "bg-gradient-to-r from-blue-500 to-purple-600 w-full"
+                          : "w-0"
+                      }`}
+                    ></div>
+                  </div>
                 )}
               </div>
             ))}

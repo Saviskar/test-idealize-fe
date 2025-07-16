@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-blue-950 via-black to-purple-800 text-white overflow-x-hidden">
       <AnimatedBackground />
       <Navbar
         scrollY={scrollY}
