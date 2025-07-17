@@ -4,6 +4,7 @@ import LandingPage from "./pages/LandingPage";
 import LoginPage from "./pages/LoginPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import InternDashboard from "./pages/InternDashboard";
+import CompanyDashboard from "./pages/CompanyDashboard";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegistrationPage />} />
-        <Route path="/dashboard" element={<InternDashboard />} />
+        <Route path="/idashboard" element={<InternDashboard />} />
+        <Route path="/cdashboard" element={<CompanyDashboard />} />
       </Routes>
     </BrowserRouter>
   );
