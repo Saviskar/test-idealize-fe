@@ -2,13 +2,15 @@ import React from "react";
 import LandingPage from "./pages/LandingPage";
 import LoginPage from "./pages/LoginPage";
 import RegistrationPage from "./pages/RegistrationPage";
+import InternDashboard from "./pages/InternDashboard";
 
 function App() {
   return (
     <>
-      <LandingPage />
+      {/* <LandingPage /> */}
       {/* <LoginPage /> */}
       {/* <RegistrationPage /> */}
+      <InternDashboard />
     </>
   );
 }
