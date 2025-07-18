@@ -528,12 +528,6 @@ const AdminDashboard = () => {
         return renderOverview();
       case "add-task":
         return <AddTask />;
-      // return (
-      //   <div className="text-center py-20">
-      //     <h2 className="text-2xl font-bold text-white mb-4">Add New Task</h2>
-      //     <p className="text-gray-400">Task creation form would go here</p>
-      //   </div>
-      // );
       case "task-list":
         return renderTaskList();
       case "interns-list":
