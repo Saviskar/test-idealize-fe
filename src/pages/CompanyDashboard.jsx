@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import {
-  Plus,
-  Upload,
-  Users,
-  Settings,
   Bell,
   Search,
-  BarChart3,
-  List,
 } from "lucide-react";
 import AddTask from "../components/CompanyDashboard/AddTask";
 import OverviewStats from "../components/CompanyDashboard/OverviewStats";
@@ -20,47 +14,6 @@ import Navigation from "../components/CompanyDashboard/Navigation";
 const AdminDashboard = () => {
   const [activeSection, setActiveSection] = useState("overview");
   const [collapsedCategories, setCollapsedCategories] = useState({});
-
-  const sidebarItems = [
-    { icon: BarChart3, label: "Overview", key: "overview" },
-    { icon: Plus, label: "Add Task", key: "add-task" },
-    { icon: List, label: "Task List", key: "task-list" },
-    { icon: Users, label: "Interns List", key: "interns-list" },
-    { icon: Upload, label: "Submissions Page", key: "submissions" },
-    { icon: Settings, label: "Settings", key: "settings" },
-  ];
-
-  const getStatusColor = (status) => {
-    switch (status) {
-      case "Completed":
-      case "Approved":
-        return "bg-green-500";
-      case "In Progress":
-      case "Pending Review":
-        return "bg-blue-500";
-      case "New":
-        return "bg-purple-500";
-      case "Active":
-        return "bg-green-500";
-      case "Inactive":
-        return "bg-gray-500";
-      default:
-        return "bg-gray-500";
-    }
-  };
-
-  const getDifficultyColor = (difficulty) => {
-    switch (difficulty) {
-      case "Beginner":
-        return "bg-green-500/20 text-green-400";
-      case "Intermediate":
-        return "bg-yellow-500/20 text-yellow-400";
-      case "Advanced":
-        return "bg-red-500/20 text-red-400";
-      default:
-        return "bg-gray-500/20 text-gray-400";
-    }
-  };
 
   const renderContent = () => {
     switch (activeSection) {
