@@ -131,13 +131,6 @@ const getCompletedTasks = (category) =>
 const getInProgressTasks = (category) =>
   category.tasks.filter((task) => task.status === "In Progress").length;
 
-const toggleCategory = (categoryId) => {
-  setCollapsedCategories((prev) => ({
-    ...prev,
-    [categoryId]: !prev[categoryId],
-  }));
-};
-
 function Dashboard() {
   const [collapsedCategories, setCollapsedCategories] = useState({});
 
